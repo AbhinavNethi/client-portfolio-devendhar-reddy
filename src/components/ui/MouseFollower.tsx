@@ -78,6 +78,20 @@ export function MouseFollower() {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
+    },
+    scale: {
+      height: 16,
+      width: 16,
+      backgroundColor: "var(--color-foreground)",
+      mixBlendMode: "difference",
+      scale: 1.5,
+    },
+    link: {
+      height: 16,
+      width: 16,
+      backgroundColor: "var(--color-foreground)",
+      mixBlendMode: "difference",
+      scale: 1.5,
     }
   };
 

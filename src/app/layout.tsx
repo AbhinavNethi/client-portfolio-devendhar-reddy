@@ -5,6 +5,8 @@ import { MouseFollower } from "@/components/ui/MouseFollower";
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
 import { MeshGradientBackground } from "@/components/ui/MeshGradientBackground";
 import { CursorProvider } from "@/context/CursorContext";
+import { ScrollProgress } from "@/components/ui/ScrollProgress";
+import { FloatButton } from "@/components/ui/FloatButton";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -35,6 +37,8 @@ export default function RootLayout({
       >
         <CursorProvider>
           <MouseFollower />
+          <ScrollProgress />
+          <FloatButton />
           <MeshGradientBackground />
           <SmoothScroll>
             {children}

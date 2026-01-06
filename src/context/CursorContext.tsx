@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
-export type CursorType = "default" | "pointer" | "text" | "project" | "button";
+export type CursorType = "default" | "pointer" | "text" | "project" | "button" | "scale" | "link";
 
 interface CursorContextType {
     cursorType: CursorType;
