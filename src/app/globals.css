@@ -1,22 +1,47 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+@layer base {
+  :root {
+    /* Deia Green inspired warm palette - Light theme */
+    --color-background: #e8dfc8;
+    --color-foreground: #1a1412;
+    --color-muted: #6b5d4f;
+    --color-accent: #c9b896;
+    --color-border: #d4c5a0;
 
-  /* Deia Green inspired warm palette - Light theme */
-  --color-background: #e8dfc8;
-  --color-foreground: #1a1412;
-  --color-muted: #6b5d4f;
-  --color-accent: #c9b896;
-  --color-border: #d4c5a0;
+    /* Warm cream palette */
+    --color-cream-light: #f5f2ed;
+    --color-cream: #e8dfc8;
+    --color-tan: #d4c5a0;
+    --color-brown: #c9b896;
+    --color-dark: #1a1412;
+  }
 
-  /* Warm cream palette */
-  --color-cream-light: #f5f2ed;
-  --color-cream: #e8dfc8;
-  --color-tan: #d4c5a0;
-  --color-brown: #c9b896;
-  --color-dark: #1a1412;
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    overflow-x: hidden;
+    /* Prevent horiz scroll from large gradients */
+  }
+
+  /* Noise Texture - Subtle for light background */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.02;
+    pointer-events: none;
+    z-index: 50;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' fill='black'/%3E%3C/svg%3E");
+  }
 }
 
 /* Custom Base Styles */
