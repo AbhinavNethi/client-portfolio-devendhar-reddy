@@ -91,11 +91,11 @@ export default async function CaseStudyPage({ params }: PageProps) {
                 </Section>
 
                 {/* Main Content */}
-                <Section size="none" className="max-w-4xl mx-auto space-y-32">
+                <Section size="none" className="max-w-4xl mx-auto">
                     {/* Problem */}
-                    <div className="grid md:grid-cols-3 gap-12">
+                    <div className="grid md:grid-cols-3 gap-12 pb-32">
                         <h3 className="text-2xl font-bold font-display sticky top-32 h-fit text-foreground/80">The Problem</h3>
-                        <div className="md:col-span-2 space-y-6 text-lg text-muted-foreground leading-relaxed">
+                        <div className="md:col-span-2 space-y-8 text-lg text-muted-foreground leading-relaxed">
                             <p>{study.problemStatement}</p>
                             <ul className="space-y-4 pt-4">
                                 {study.businessChallenges.map((c, i) => (
@@ -115,9 +115,9 @@ export default async function CaseStudyPage({ params }: PageProps) {
                     </div>
 
                     {/* Process */}
-                    <div className="grid md:grid-cols-3 gap-12">
+                    <div className="grid md:grid-cols-3 gap-12 pb-32">
                         <h3 className="text-2xl font-bold font-display sticky top-32 h-fit text-foreground/80">UX Process</h3>
-                        <div className="md:col-span-2 space-y-12 text-lg text-muted-foreground leading-relaxed">
+                        <div className="md:col-span-2 space-y-16 text-lg text-muted-foreground leading-relaxed">
                             <div className="relative pl-8 border-l border-border/40">
                                 <span className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-foreground/30" />
                                 <strong className="block text-foreground mb-2 text-xl">Discovery</strong>
@@ -137,9 +137,9 @@ export default async function CaseStudyPage({ params }: PageProps) {
                     </div>
 
                     {/* Solution */}
-                    <div className="grid md:grid-cols-3 gap-12">
+                    <div className="grid md:grid-cols-3 gap-12 pb-32">
                         <h3 className="text-2xl font-bold font-display sticky top-32 h-fit text-foreground/80">The Solution</h3>
-                        <div className="md:col-span-2 space-y-6 text-lg text-muted-foreground leading-relaxed">
+                        <div className="md:col-span-2 space-y-8 text-lg text-muted-foreground leading-relaxed">
                             <p className="font-medium text-foreground text-xl">{study.solution}</p>
                         </div>
                     </div>
@@ -147,7 +147,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                     {/* Outcomes */}
                     <div className="grid md:grid-cols-3 gap-12">
                         <h3 className="text-2xl font-bold font-display sticky top-32 h-fit text-foreground/80">Outcomes</h3>
-                        <div className="md:col-span-2 space-y-6 text-lg text-muted-foreground leading-relaxed">
+                        <div className="md:col-span-2 space-y-8 text-lg text-muted-foreground leading-relaxed">
                             <ul className="space-y-4">
                                 {study.outcomes.map((o, i) => (
                                     <li key={i} className="flex gap-3">
