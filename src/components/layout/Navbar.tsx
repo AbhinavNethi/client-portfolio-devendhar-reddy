@@ -37,7 +37,7 @@ export function Navbar() {
 
                 {/* Mobile Menu Placeholder */}
                 <div className="md:hidden">
-                    <button className="inline-flex items-center justify-center gap-2 rounded-full font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-transparent text-foreground hover:bg-neutral-100 h-9 px-4 text-sm" tabindex="0">
+                    <button className="inline-flex items-center justify-center gap-2 rounded-full font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-transparent text-foreground hover:bg-neutral-100 h-9 px-4 text-sm" tabIndex={0}>
                         Menu
                     </button>
                 </div>
