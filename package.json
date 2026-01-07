@@ -1,10 +1,13 @@
 {
-  "name": "pr",
+  "name": "devendhar-reddy-portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Premium enterprise-grade portfolio website for Senior UI/UX Designer Devendhar Reddy",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "keywords": [],
   "author": "",
