@@ -42,14 +42,14 @@ export function Hero() {
                                     transition={{ duration: 0.8, delay: 2.4, ease: [0.22, 1, 0.36, 1] }}
                                     className="text-xl md:text-2xl font-medium text-muted-foreground block"
                                 >
-                                    Namaste, I'm
+                                    Hello, I'm
                                 </motion.span>
                             </div>
 
                             <div className="relative z-20">
                                 <h1 className="text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-display font-bold leading-[0.9] tracking-tighter text-foreground mb-8">
                                     <span className="block">DEVENDHAR</span>
-                                    <span className="block text-neutral-400">REDDY</span>
+                                    <span className="block text-foreground/50">REDDY</span>
                                 </h1>
                             </div>
 

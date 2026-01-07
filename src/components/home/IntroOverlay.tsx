@@ -39,16 +39,15 @@ export function IntroOverlay({ onComplete }: { onComplete: () => void }) {
             <div className="relative w-full flex items-center justify-center">
                 <div className="flex flex-col items-center justify-center leading-none">
                     <motion.div
-                        initial={{ x: "-100vw" }}
+                        initial={{ opacity: 0, scale: 0.8 }}
                         animate={
                             phase === "slide-in"
-                                ? { x: "0%", scale: 1, opacity: 1 }
+                                ? { opacity: 1, scale: 1 }
                                 : phase === "zoom"
-                                    ? { x: "0%", scale: 50, opacity: 0 } // Zoom IN massively
-                                    : { x: "-100vw", scale: 1, opacity: 1 }
+                                    ? { opacity: 0, scale: 50 } // Zoom IN massively
+                                    : { opacity: 0, scale: 0.8 }
                         }
                         transition={{
-                            x: { duration: 1.5, ease: [0.22, 1, 0.36, 1] },
                             scale: { duration: 1.5, ease: [0.76, 0, 0.24, 1] },
                             opacity: { duration: 0.8, delay: 0.4 }
                         }}
@@ -59,16 +58,15 @@ export function IntroOverlay({ onComplete }: { onComplete: () => void }) {
                     </motion.div>
 
                     <motion.div
-                        initial={{ x: "100vw" }}
+                        initial={{ opacity: 0, scale: 0.8 }}
                         animate={
                             phase === "slide-in"
-                                ? { x: "0%", scale: 1, opacity: 1 }
+                                ? { opacity: 1, scale: 1 }
                                 : phase === "zoom"
-                                    ? { x: "0%", scale: 50, opacity: 0 } // Zoom IN massively
-                                    : { x: "100vw", scale: 1, opacity: 1 }
+                                    ? { opacity: 0, scale: 50 } // Zoom IN massively
+                                    : { opacity: 0, scale: 0.8 }
                         }
                         transition={{
-                            x: { duration: 1.5, ease: [0.22, 1, 0.36, 1], delay: 0.1 },
                             scale: { duration: 1.5, ease: [0.76, 0, 0.24, 1] },
                             opacity: { duration: 0.8, delay: 0.4 }
                         }}

@@ -3,7 +3,7 @@ import { Inter, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import { MouseFollower } from "@/components/ui/MouseFollower";
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
-import { MeshGradientBackground } from "@/components/ui/MeshGradientBackground";
+import { FlowingBackground } from "@/components/ui/FlowingBackground";
 import { CursorProvider } from "@/context/CursorContext";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { FloatButton } from "@/components/ui/FloatButton";
@@ -39,7 +39,7 @@ export default function RootLayout({
           <MouseFollower />
           <ScrollProgress />
           <FloatButton />
-          <MeshGradientBackground />
+          <FlowingBackground />
           <SmoothScroll>
             {children}
           </SmoothScroll>

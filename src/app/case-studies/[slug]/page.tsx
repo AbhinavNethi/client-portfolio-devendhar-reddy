@@ -55,11 +55,11 @@ export default async function CaseStudyPage({ params }: PageProps) {
                 {/* Hero */}
                 <Section size="none" className="mb-20">
                     <span className="text-sm font-semibold tracking-wider text-muted-foreground uppercase mb-4 block">{study.category}</span>
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-8 max-w-5xl">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-8 max-w-5xl text-foreground">
                         {study.title}
                     </h1>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 border-y border-white/10 py-8">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 border-y border-border/60 py-8">
                         <div>
                             <span className="block text-xs uppercase tracking-wider text-muted-foreground mb-1">Role</span>
                             <span className="font-medium text-lg leading-snug">{study.roles.join(", ")}</span>
@@ -83,7 +83,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                 <Section size="none" className="mb-24">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {study.impactMetrics.map((metric, i) => (
-                            <div key={i} className="p-8 bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center text-center">
+                            <div key={i} className="p-8 bg-foreground/5 rounded-2xl border border-border/40 flex items-center justify-center text-center">
                                 <span className="text-xl md:text-2xl font-bold text-foreground">{metric}</span>
                             </div>
                         ))}
@@ -118,18 +118,18 @@ export default async function CaseStudyPage({ params }: PageProps) {
                     <div className="grid md:grid-cols-3 gap-12">
                         <h3 className="text-2xl font-bold font-display sticky top-32 h-fit text-foreground/80">UX Process</h3>
                         <div className="md:col-span-2 space-y-12 text-lg text-muted-foreground leading-relaxed">
-                            <div className="relative pl-8 border-l border-white/10">
-                                <span className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-white/20" />
+                            <div className="relative pl-8 border-l border-border/40">
+                                <span className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-foreground/30" />
                                 <strong className="block text-foreground mb-2 text-xl">Discovery</strong>
                                 <p>{study.process.discovery}</p>
                             </div>
-                            <div className="relative pl-8 border-l border-white/10">
-                                <span className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-white/20" />
+                            <div className="relative pl-8 border-l border-border/40">
+                                <span className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-foreground/30" />
                                 <strong className="block text-foreground mb-2 text-xl">Ideation</strong>
                                 <p>{study.process.ideation}</p>
                             </div>
-                            <div className="relative pl-8 border-l border-neutral-200">
-                                <span className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-white/20" />
+                            <div className="relative pl-8 border-l border-border/40">
+                                <span className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-foreground/30" />
                                 <strong className="block text-foreground mb-2 text-xl">Testing & Validation</strong>
                                 <p>{study.process.testing}</p>
                             </div>

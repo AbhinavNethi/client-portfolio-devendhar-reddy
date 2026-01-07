@@ -35,8 +35,7 @@ export function Footer() {
                             <div className="flex flex-col gap-4">
                                 <span className="text-neutral-500 text-sm font-medium">Socials</span>
                                 <a href="#" className="text-lg hover:underline underline-offset-4">LinkedIn</a>
-                                <a href="#" className="text-lg hover:underline underline-offset-4">Dribbble</a>
-                                <a href="#" className="text-lg hover:underline underline-offset-4">Behance</a>
+                                <a href="#" className="text-lg hover:underline underline-offset-4">GitHub</a>
                             </div>
                             <div className="flex flex-col gap-4">
                                 <span className="text-neutral-500 text-sm font-medium">Resources</span>
@@ -46,9 +45,8 @@ export function Footer() {
                         </div>
                     </div>
 
-                    <div className="text-sm text-neutral-600 flex justify-between items-center w-full">
+                    <div className="text-sm text-neutral-600 flex justify-center items-center w-full">
                         <span>&copy; {new Date().getFullYear()} Devendhar Reddy</span>
-                        <span>Designed in Next.js 15 & Tailwind</span>
                     </div>
 
                 </div>
