@@ -54,7 +54,7 @@ export function Hero() {
                             </div>
 
                             <p className="text-lg md:text-xl text-muted-foreground max-w-lg mb-10 leading-relaxed">
-                                Senior UI/UX Designer & Creative Director crafting intuitive, enterprise-grade digital experiences for Fortune 100 companies.
+                                UI/UX Designer specialized in crafting intuitive e-commerce platforms, enterprise systems, and mobile-first experiences for startups and government digital initiatives.
                             </p>
 
                             <div className="flex flex-wrap gap-4">
@@ -88,7 +88,7 @@ export function Hero() {
                         >
                             <div className="absolute inset-0 bg-gradient-to-tr from-background via-transparent to-transparent z-10 mix-blend-overlay opacity-50" />
                             <Image
-                                src="/profile.png"
+                                src="/devendhar-reddy.jpg"
                                 fill
                                 alt="Devendhar Reddy"
                                 className="object-cover object-top rounded-2xl shadow-2xl"

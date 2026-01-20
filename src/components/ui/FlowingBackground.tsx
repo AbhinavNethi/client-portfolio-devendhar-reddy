@@ -78,6 +78,14 @@ export function FlowingBackground() {
                 }}
             />
 
+            {/* Dark vignette overlay for depth effect like deiacgreen.com */}
+            <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                    background: "radial-gradient(ellipse at center, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.15) 100%)",
+                }}
+            />
+
             {/* CSS animations are defined in globals.css for maximum performance */}
             <style jsx>{`
                 .flowing-blob-1 {

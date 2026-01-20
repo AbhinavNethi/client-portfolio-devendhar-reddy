@@ -12,12 +12,12 @@ export function CaseStudyList() {
         target: targetRef,
     });
 
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-85%"]);
 
     return (
         <div ref={targetRef} id="work" className="relative h-[300vh] bg-neutral-900 text-white">
-            <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-                <motion.div style={{ x }} className="flex gap-16 px-12 md:px-24">
+            <div className="sticky top-0 flex h-screen items-center overflow-hidden py-20">
+                <motion.div style={{ x }} className="flex gap-16 px-12 md:px-24 items-center">
 
                     {/* Header Card */}
                     <div className="min-w-[80vw] md:min-w-[40vw] flex flex-col justify-center">

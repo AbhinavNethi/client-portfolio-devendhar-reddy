@@ -46,7 +46,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
             <article className="pt-32 pb-24">
                 {/* Back Link */}
                 <Section size="none" className="mb-12">
-                    <Link href="/#work" className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                    <Link href="/case-studies" className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                         <MoveLeft className="w-4 h-4 mr-2" />
                         Back to Case Studies
                     </Link>

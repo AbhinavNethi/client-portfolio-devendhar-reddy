@@ -23,7 +23,7 @@ export function AboutLead() {
                             My philosophy is simple: <strong className="text-foreground font-medium">Design is clarity.</strong> In enterprise environments, clarity reduces risk and increases efficiency. I don't just design screens; I design systems that empower engineering teams to build faster and better, reducing UI defects by significant margins.
                         </p>
                         <p>
-                            From redesigning legacy wealth management platforms at TIAA-CREF to optimizing digital pharmacy workflows at CVS Health, I take end-to-end ownership—from initial discovery and persona mapping to final pixel-perfect delivery and accessibility compliance (WCAG 2.1).
+                            From leading design capabilities at Southern Fertility to optimizing digital e-commerce flows for Landmark Group India and RT Square, I take end-to-end ownership—from initial discovery and persona mapping to final pixel-perfect delivery across web and mobile platforms.
                         </p>
                     </div>
                 </div>

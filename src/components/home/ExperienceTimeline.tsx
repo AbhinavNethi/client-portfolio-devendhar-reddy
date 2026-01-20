@@ -6,25 +6,25 @@ import Link from "next/link";
 
 const experiences = [
     {
-        company: "TIAA-CREF",
-        role: "Senior UI/UX Designer",
-        period: "2021 — Present",
-        desc: "Leading design capabilities for wealth management platforms, focusing on accessibility and enterprise-scale design systems.",
-        metrics: ["Reduced friction by 30%", "WCAG 2.1 Compliance", "Design System Lead"]
+        company: "Southern Fertility & NEDC",
+        role: "UI/UX Designer",
+        period: "Sept 2024 — Present",
+        desc: "Led end-to-end UX and UI design for web and mobile products, creating user flows, wireframes, and high-fidelity mockups.",
+        metrics: ["UX/UI Design", "User Flows", "Web & Mobile"]
     },
     {
-        company: "CVS Health",
+        company: "Bee Pvt Ltd. & Reki, Landmark Group India",
         role: "UI/UX Designer",
-        period: "2019 — 2021",
-        desc: "Optimized digital pharmacy flows and member engagement experiences affecting millions of users.",
-        metrics: ["98% defect-free releases", "200+ UX issues resolved", "User Testing"]
+        period: "July 2023 — Aug 2024",
+        desc: "Developed professional flow charts, UI mockups, and presentations in collaboration with product owners and development teams.",
+        metrics: ["Flow Charts", "UI Mockups", "Product Strategy"]
     },
     {
-        company: "Culture Machine",
+        company: "RT Square Pvt Ltd. & DX change",
         role: "UI/UX Designer",
-        period: "2018 — 2019",
-        desc: "End-to-end product design for web and mobile startups in a fast-paced agile environment.",
-        metrics: ["Visual Design", "Prototyping", "Angular/Bootstrap"]
+        period: "June 2020 — Nov 2022",
+        desc: "Designed e-commerce UX flows and UI mockups for desktop and mobile platforms.",
+        metrics: ["E-commerce", "Mobile Design", "Interaction Design"]
     }
 ];
 

@@ -14,6 +14,15 @@ interface CaseStudyCardProps {
 
 export function CaseStudyCard({ study, index }: CaseStudyCardProps) {
     const { setCursorType, setCursorText } = useCursor();
+
+    // Helper function to extract correct image name from slug
+    const getImageName = (slug: string): string => {
+        // Handle special case for popular-packages
+        if (slug === 'popular-packages-ecommerce') return 'popular-packages';
+        // Default: use first word of slug
+        return slug.split('-')[0];
+    };
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -38,13 +47,13 @@ export function CaseStudyCard({ study, index }: CaseStudyCardProps) {
                     study.color,
                     "group-hover:scale-[1.01] group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] group-focus-visible:ring-2 group-focus-visible:ring-ring"
                 )}>
-                    {/* Visual Placeholder */}
-                    <div className="absolute inset-0 flex items-center justify-center p-12">
-                        <div className="w-full h-full bg-white/40 backdrop-blur-sm rounded-lg border border-white/50 flex items-center justify-center shadow-sm">
-                            <span className="text-foreground/10 font-display font-bold text-4xl md:text-6xl text-center px-4">
-                                {study.title}
-                            </span>
-                        </div>
+                    {/* Project Image */}
+                    <div className="absolute inset-0">
+                        <img
+                            src={`/projects/${getImageName(study.slug)}.png`}
+                            alt={study.title}
+                            className="w-full h-full object-cover"
+                        />
                     </div>
                 </div>
 

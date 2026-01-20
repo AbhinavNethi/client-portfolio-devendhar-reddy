@@ -16,7 +16,7 @@ export function GoogleDriveLink({ link }: GoogleDriveLinkProps) {
             </p>
             <Button size="lg" href={link} target="_blank" className="bg-blue-600 text-white hover:bg-blue-700 hover:opacity-100 font-semibold px-8 h-14">
                 <FolderOpen className="mr-2 w-5 h-5" />
-                View Full Case Study on Google Drive
+                View Full Case Study
             </Button>
         </div>
     );

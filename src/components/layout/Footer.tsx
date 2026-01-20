@@ -13,7 +13,7 @@ export function Footer() {
                     <div className="flex flex-col gap-8">
                         <span className="text-neutral-400 uppercase tracking-widest text-sm font-medium">Get in Touch</span>
                         <motion.a
-                            href="mailto:hello@devendhar.com"
+                            href="mailto:devareddyocta@gmail.com"
                             className="text-5xl md:text-8xl lg:text-9xl font-display font-bold hover:text-neutral-300 transition-colors flex items-center group w-fit leading-none"
                             whileHover={{ x: 20 }}
                             transition={{ type: "spring", stiffness: 300 }}
@@ -39,8 +39,8 @@ export function Footer() {
                             </div>
                             <div className="flex flex-col gap-4">
                                 <span className="text-neutral-500 text-sm font-medium">Resources</span>
-                                <a href="/resume.pdf" className="text-lg hover:underline underline-offset-4">Resume</a>
-                                <a href="#" className="text-lg hover:underline underline-offset-4">Case Studies</a>
+                                <a href="/resume.pdf" target="_blank" className="text-lg hover:underline underline-offset-4">Resume</a>
+                                <a href="/case-studies" className="text-lg hover:underline underline-offset-4">Case Studies</a>
                             </div>
                         </div>
                     </div>
